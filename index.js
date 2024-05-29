@@ -7,7 +7,7 @@ const readFile = (filepath) => {
   return JSON.parse(fs.readFileSync(pathF, 'utf-8'));
 }
 
-const gendiff = (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2) => {
   const data1 = readFile(filepath1);
   const data2 = readFile(filepath2);
 
@@ -30,4 +30,4 @@ const gendiff = (filepath1, filepath2) => {
   return `{\n${diffObj.join('\n')}\n}`;   
 }
 
-export default gendiff
+export default genDiff
