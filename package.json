@@ -5,7 +5,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "npx jest --colors"
+    "test": "jest"
   },
   "bin": {
     "gendiff": "bin/gendiff.js"
@@ -14,13 +14,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.11.17",
-    "eslint": "^8.40.0",
+    "eslint": "^9.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
+    "globals": "^15.3.0",
     "jest": "^29.7.0",
     "prettier": "^3.1.0"
   },
